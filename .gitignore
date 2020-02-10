@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+logfile
+
+.env
+
+node_modules/
+.idea
+/.idea/
