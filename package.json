@@ -11,17 +11,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.10.0",
-    "apollo-server-express": "^2.10.0",
+    "apollo-server": "^2.11.0",
+    "apollo-server-express": "^2.11.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "ecommpay": "^0.1.5-1",
     "express": "^4.17.1",
-    "graphql": "^14.6.0"
+    "graphql": "^15.0.0",
+    "node-fetch": "^2.6.0",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
     "nodemon": "^2.0.2"
   }
 }

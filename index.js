@@ -2,9 +2,22 @@
 import express from 'express';
 import { ApolloServer, gql } from 'apollo-server-express';
 import cors from 'cors';
+import path from "path"
+
+const cleanChars = (chars) => {
+  return chars.replace(/[^a-zA-Z0-9 -_]+/g, '');
+};
+
 
 const app = express();
 app.use(cors())
+
+
+// PayProvider callbacks
+app.all('/callback/*', async (req, res) => {
+  const payProvider = cleanChars(req.url.split('/')[2]);
+  await require(`./providers/pay/${payProvider}.js`).callback(req, res);
+});
 
 
 const schema = gql`
