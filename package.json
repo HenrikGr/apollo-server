@@ -18,7 +18,7 @@
     "ecommpay": "^0.1.5-1",
     "express": "^4.17.1",
     "graphql": "^15.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "uuid": "^8.3.0"
   },
   "devDependencies": {
